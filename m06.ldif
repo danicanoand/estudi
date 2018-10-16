@@ -1,0 +1,59 @@
+dn: dc=m06,dc=cat
+dc: m06
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: m06.cat
+
+dn: ou=maquines,dc=m06,dc=cat
+ou: maquines
+description: Container per a maquines linux
+objectclass: organizationalunit
+
+dn: ou=clients,dc=m06,dc=cat
+ou: clients
+description: Container per a clients linux
+objectclass: organizationalunit
+
+dn: ou=productes,dc=m06,dc=cat
+ou: productes
+description: Container per a productes linux
+objectclass: organizationalunit
+
+
+dn: ou=usuaris,dc=m06,dc=cat
+ou: usuaris
+description: Container per usuaris del sistema linux
+objectclass: organizationalunit
+
+dn: cn=Pau Pou,ou=usuaris,dc=m06,dc=cat
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Pau Pou
+cn: Pauet Pou
+sn: Pou
+homephone: 555-222-2220
+mail: pau@m06.cat
+description: Watch out for this guy
+ou: Profes
+uid: pau
+uidNumber: 5000
+gidNumber: 100
+homeDirectory: /tmp/home/pau
+userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
+
+dn: cn=Pere Pou,ou=usuaris,dc=m06,dc=cat
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Pere Pou
+sn: Pou
+homephone: 555-222-2221
+mail: pere@m06.cat
+description: Watch out for this guy
+ou: Profes
+uid: pere
+uidNumber: 5001
+gidNumber: 100
+homeDirectory: /tmp/home/pere
+userPassword: {SSHA}ghmtRL11YtXoUhIP7z6f7nb8RCNadFe+
+

@@ -1,0 +1,33 @@
+dn: dc=nom,dc=com
+dc: nom
+description: Escola del treball de Barcelona
+objectClass: dcObject
+objectClass: organization
+o: nom.com
+
+dn: ou=maquines,dc=nom,dc=com
+ou: maquines
+description: Container per a maquines linux
+objectclass: organizationalunit
+
+dn: ou=usuaris,dc=nom,dc=com
+ou: usuaris
+description: Container per usuaris del sistema linux
+objectclass: organizationalunit
+
+dn: cn=Pau Pou,ou=usuaris,dc=nom,dc=com
+objectclass: posixAccount
+objectclass: inetOrgPerson
+cn: Pau Pou
+cn: Pauet Pou
+sn: Pou
+homephone: 555-222-2220
+mail: pau@nom.com
+description: Watch out for this guy
+ou: Profes
+uid: pau
+uidNumber: 5000
+gidNumber: 100
+homeDirectory: /tmp/home/pau
+userPassword: {SSHA}NDkipesNQqTFDgGJfyraLz/csZAIlk2/
+
